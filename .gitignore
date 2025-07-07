@@ -1,0 +1,45 @@
+# =============================================================================
+# --- Python Specific ---
+# =============================================================================
+
+# Virtual Environments
+# This is the most important one! Never commit your venv.
+venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+
+# =============================================================================
+# --- IDE & System Specific ---
+# =============================================================================
+
+# PyCharm/JetBrains IDE folder
+.idea/
+
+# macOS system file
+.DS_Store
+
+# VS Code folder
+.vscode/
+
+
+# =============================================================================
+# --- Secrets & Sensitive Data ---
+# =============================================================================
+
+# Environment variables file - DO NOT COMMIT THIS FILE
+.env
+*.env
+
+
+# =============================================================================
+# --- Build & Dependency Artifacts ---
+# =============================================================================
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
