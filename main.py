@@ -14,10 +14,11 @@ if TOKEN is None:
 
 # --- Bot Configuration ---
 # Paste your channel ID here. If 0, the bot works in all channels.
-ALLOWED_CHANNEL_ID = os.getenv("CHANNEL_ID")
+ALLOWED_CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
 
 # --- Bot Setup ---
 intents = discord.Intents.default()
+intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # --- Data File ---
